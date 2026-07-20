@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yejin Nam · Operations, Analytics & AI</title>
+<meta name="description" content="Yejin Nam's interactive professional portfolio connecting supply chain, analytics, leadership, and practical AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f8fc;--ink:#14182b;--muted:#68708a;--line:#e4e7f0;
+  --navy:#08122f;--navy2:#111c44;--violet:#8959ff;--pink:#ef6fa8;--cyan:#52d2df;--gold:#f5c64f;
+  --card:#fff;--shadow:0 18px 50px rgba(17,28,68,.12);--radius:24px;--max:1380px;
+  --display:'Manrope',sans-serif;--body:'DM Sans',sans-serif;--mono:'Space Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.6}a{color:inherit}img{display:block;max-width:100%}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+@media(max-width:700px){.wrap{width:min(100% - 28px,var(--max))}}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:100;background:rgba(8,18,47,.86);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.09);color:#fff}.nav-in{max-width:var(--max);margin:auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{text-decoration:none;display:flex;align-items:center;gap:12px;font-family:var(--display);font-weight:800;letter-spacing:.18em;font-size:.88rem}.brand-mark{width:28px;height:28px;display:grid;place-items:center;color:#ff9fd0;font-size:1.25rem}.nav-links{display:flex;list-style:none;gap:34px}.nav-links a{text-decoration:none;color:#dfe3f4;font-size:.92rem;font-weight:600}.nav-links a:hover{color:#b88cff}.nav-cta{text-decoration:none;border:1px solid rgba(82,210,223,.45);padding:10px 17px;border-radius:10px;font-size:.86rem;font-weight:700}.menu{display:none;background:none;color:white;border:1px solid rgba(255,255,255,.25);padding:7px 11px;border-radius:8px}.mobile-links{display:none}
+@media(max-width:880px){.nav-links,.nav-cta{display:none}.menu{display:block}.mobile-links.open{display:flex;position:absolute;top:100%;left:0;right:0;background:#08122f;flex-direction:column;padding:10px 20px 18px}.mobile-links a{color:#fff;text-decoration:none;padding:11px 6px;border-bottom:1px solid rgba(255,255,255,.08)}}
+
+/* hero */
+.hero{color:#fff;min-height:760px;background:
+ radial-gradient(circle at 14% 42%,rgba(239,111,168,.22),transparent 30%),
+ radial-gradient(circle at 84% 35%,rgba(82,210,223,.15),transparent 32%),
+ linear-gradient(120deg,#090e28 0%,#0c173a 55%,#10194a 100%);position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(to bottom,#000 0%,transparent 82%)}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .98fr;gap:32px;align-items:center;padding:70px 0 30px}.eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:#f294d0;margin-bottom:16px}.hero h1{font-family:var(--display);font-size:clamp(3rem,5.6vw,5.4rem);line-height:1.05;letter-spacing:-.045em;max-width:720px}.hero h1 .grad{background:linear-gradient(90deg,#ef78c4,#8b66ff,#61d6e6);-webkit-background-clip:text;color:transparent}.hero-copy{font-size:1.16rem;color:#c7cde2;max-width:640px;margin:22px 0 30px}.actions{display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;padding:14px 24px;border-radius:12px;font-weight:800;font-size:.95rem;border:1px solid transparent;transition:.22s}.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(90deg,#bd4ff4,#7664ff);box-shadow:0 12px 30px rgba(137,89,255,.35)}.secondary{border-color:rgba(255,255,255,.38);background:rgba(255,255,255,.03)}
+.hero-art{height:550px;position:relative;display:grid;place-items:center}.core{width:250px;height:250px;border-radius:50%;display:grid;place-items:center;text-align:center;background:radial-gradient(circle at 35% 25%,rgba(255,255,255,.18),rgba(255,255,255,.07));border:1px solid rgba(255,255,255,.24);box-shadow:0 28px 70px rgba(0,0,0,.22);position:relative;z-index:3}.core small{font-family:var(--mono);text-transform:uppercase;letter-spacing:.22em;color:#b4a2ff}.core strong{display:block;font-family:var(--display);font-size:1.75rem;line-height:1.55;margin-top:8px}.core .o{color:#ff7bb6}.core .a{color:#aa78ff}.core .i{color:#59d5e2}.ring{position:absolute;border-radius:50%;border:1px dashed rgba(255,255,255,.28)}.r1{width:410px;height:410px}.r2{width:540px;height:540px;border-style:solid;border-color:rgba(255,255,255,.12)}.orb{position:absolute;width:12px;height:12px;border-radius:50%;box-shadow:0 0 20px currentColor}.orb1{color:#8e5dff;background:currentColor;top:82px;left:54%;}.orb2{color:#f17aae;background:currentColor;right:62px;top:145px}.orb3{color:#53d0db;background:currentColor;right:105px;bottom:92px}
+.float-card{position:absolute;width:210px;padding:22px 20px;background:linear-gradient(145deg,rgba(255,255,255,.16),rgba(255,255,255,.08));border:1px solid rgba(255,255,255,.22);border-radius:18px;backdrop-filter:blur(12px);box-shadow:0 24px 50px rgba(0,0,0,.22);text-decoration:none;z-index:4;transition:.25s}.float-card:hover{transform:translateY(-4px) scale(1.02)}.float-card b{font-family:var(--display);font-size:1.08rem}.float-card span{display:block;color:#c9cfe2;margin-top:5px}.fc1{left:10px;top:36px;transform:rotate(-3deg)}.fc2{right:2px;top:36px;transform:rotate(3deg)}.fc3{left:10px;bottom:24px;transform:rotate(-1deg)}.fc4{right:2px;bottom:24px;transform:rotate(2deg)}
+.stats{position:relative;z-index:3;margin-top:5px;padding-bottom:38px}.stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:24px;overflow:hidden;backdrop-filter:blur(12px)}.stat{padding:24px 28px;min-width:0;border-right:1px solid rgba(255,255,255,.13)}.stat:last-child{border-right:none}.stat label{display:block;font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;color:#9da9c7;text-transform:uppercase;margin-bottom:7px}.stat strong{display:block;font-family:var(--display);font-size:1.16rem;white-space:nowrap}.stat:nth-child(2) strong{color:#ffb2c3}.stat:nth-child(3) strong{color:#63d6dc}.stat:nth-child(4) strong{color:#f7d15c}
+@media(max-width:980px){.hero-grid{grid-template-columns:1fr;padding-top:55px}.hero-art{height:510px}.stats{margin-top:0}.stat-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:none}.stat:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.13)}}
+@media(max-width:600px){.hero h1{font-size:2.8rem}.hero-art{height:690px}.core{width:210px;height:210px}.r1{width:330px;height:330px}.r2{width:440px;height:440px}.float-card{width:160px;padding:15px}.fc1{left:0;top:14px}.fc2{right:0;top:120px}.fc3{left:0;bottom:120px}.fc4{right:0;bottom:14px}.stat-grid{grid-template-columns:1fr}.stat{border-right:none;border-bottom:1px solid rgba(255,255,255,.13)}.stat:last-child{border-bottom:none}.stat strong{white-space:normal}}
+
+/* section base */
+section{padding:88px 0}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:34px}.section-head h2{font-family:var(--display);font-size:clamp(2rem,4vw,3rem);letter-spacing:-.035em}.section-head p{color:var(--muted);max-width:620px}.kicker{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:#7853e8;margin-bottom:8px}.spark{color:#825cf1;margin-right:8px}
+
+/* personal value proposition */
+.value-section{padding:88px 0;background:
+ radial-gradient(circle at 12% 20%,rgba(239,111,168,.14),transparent 28%),
+ radial-gradient(circle at 88% 70%,rgba(82,210,223,.12),transparent 30%),
+ linear-gradient(135deg,#0b1538 0%,#121b4b 60%,#17164a 100%);color:#fff;position:relative;overflow:hidden}
+.value-section:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:58px 58px}
+.value-wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:34px;align-items:stretch}
+.value-main{padding:46px;border:1px solid rgba(255,255,255,.15);border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.045));backdrop-filter:blur(16px);box-shadow:0 30px 70px rgba(2,7,28,.28)}
+.value-main .kicker{color:#a98cff}.value-main h2{font-family:var(--display);font-size:clamp(2.1rem,4vw,3.35rem);line-height:1.1;letter-spacing:-.045em;max-width:760px;margin-bottom:22px}
+.value-main blockquote{font-size:1.18rem;line-height:1.8;color:#e5e8f5;max-width:900px}
+.value-main blockquote strong{color:#fff}.value-main .highlight{background:linear-gradient(90deg,#ff8fc4,#9c76ff,#65dae2);-webkit-background-clip:text;color:transparent;font-weight:800}
+.value-side{display:grid;gap:18px}.value-mini{padding:26px;border:1px solid rgba(255,255,255,.14);border-radius:22px;background:rgba(255,255,255,.065);backdrop-filter:blur(12px)}
+.value-mini label{display:block;font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#9fabc9;margin-bottom:10px}.value-mini p{color:#d9deef}.value-mini .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.value-pill{font-size:.82rem;font-weight:700;padding:8px 11px;border-radius:999px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12)}
+@media(max-width:900px){.value-wrap{grid-template-columns:1fr}.value-side{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.value-main{padding:30px 24px}.value-main blockquote{font-size:1.03rem}.value-side{grid-template-columns:1fr}}
+
+/* featured cards */
+.featured{background:#fff}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.project-card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 12px 34px rgba(17,28,68,.09);text-decoration:none;transition:.25s}.project-card:hover{transform:translateY(-7px);box-shadow:0 22px 48px rgba(17,28,68,.16)}.project-visual{height:260px;position:relative;overflow:hidden}.project-visual img{width:100%;height:100%;object-fit:cover}.timeline-v{background:radial-gradient(circle at 75% 40%,rgba(143,89,255,.38),transparent 30%),linear-gradient(150deg,#0c1741,#171052)}.timeline-v img{object-fit:contain;padding:18px;filter:saturate(1.12)}.speaker-v{background:#0c1835}.speaker-v img{object-position:center;object-fit:cover}.lead-v{background:#182744;display:grid;place-items:center}.lead-v img{width:100%;height:100%;object-fit:cover;object-position:center}.lead-radar{width:170px;height:170px;border:1px solid rgba(255,255,255,.25);clip-path:polygon(50% 0,100% 38%,81% 100%,19% 100%,0 38%);background:repeating-radial-gradient(circle,transparent 0 22px,rgba(255,255,255,.15) 23px 24px);position:relative}.lead-radar:after{content:"";position:absolute;inset:32px;background:rgba(82,210,223,.34);clip-path:polygon(50% 0,100% 38%,81% 100%,19% 100%,0 38%)}.project-body{padding:20px}.project-body h3{font-family:var(--display);font-size:1.28rem;margin-bottom:4px}.project-body p{color:var(--muted);font-size:.92rem}.project-meta{display:flex;justify-content:space-between;align-items:center;margin-top:16px;font-size:.84rem;color:var(--muted)}.go{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:white;background:linear-gradient(135deg,#a24eff,#6a6aff)}.project-card:nth-child(2) .go{background:linear-gradient(135deg,#ff6e88,#ff7457)}.project-card:nth-child(3) .go{background:linear-gradient(135deg,#20aaa2,#197a83)}
+@media(max-width:900px){.projects{grid-template-columns:1fr 1fr}.projects .project-card:last-child{grid-column:1/-1}}@media(max-width:620px){.projects{grid-template-columns:1fr}.projects .project-card:last-child{grid-column:auto}}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start}.about-copy p{font-size:1.08rem;color:#424960;margin-bottom:18px}.about-card{background:linear-gradient(145deg,#111a42,#15174a);color:white;border-radius:24px;padding:30px;box-shadow:var(--shadow)}.about-card h3{font-family:var(--display);font-size:1.45rem;margin-bottom:20px}.skill{margin:17px 0}.skill-top{display:flex;justify-content:space-between;font-size:.88rem;margin-bottom:7px}.bar{height:8px;background:rgba(255,255,255,.1);border-radius:999px;overflow:hidden}.bar i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#f27ab5,#8664ff,#53d4df)}
+@media(max-width:820px){.about-grid{grid-template-columns:1fr}}
+
+/* artifact detail */
+.artifacts{background:#f1f3f9}.artifact{background:#fff;border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);margin-bottom:34px;overflow:hidden}.artifact-head{display:grid;grid-template-columns:1fr 360px;gap:28px;padding:34px;border-bottom:1px solid var(--line);align-items:center}.artifact-head h3{font-family:var(--display);font-size:clamp(1.6rem,3vw,2.35rem);letter-spacing:-.035em;margin:8px 0}.artifact-head p{color:var(--muted)}.mini-cover{height:210px;border-radius:18px;overflow:hidden;background:#111b43}.mini-cover img{width:100%;height:100%;object-fit:cover}.tabs{display:flex;gap:8px;flex-wrap:wrap;padding:24px 30px 0}.tab{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 15px;font:700 .76rem var(--mono);text-transform:uppercase;letter-spacing:.06em;color:#68708a;cursor:pointer}.tab.active{background:#111a42;color:#fff;border-color:#111a42}.panels{padding:28px 34px 36px}.panel{display:none}.panel.active{display:block}.panel h4{font-family:var(--display);font-size:1.22rem;margin-bottom:12px}.panel p{max-width:920px;color:#464e65;margin-bottom:14px}.panel ol,.panel ul{margin:0 0 15px 22px;color:#464e65}.panel li{margin-bottom:9px}.chips{display:flex;gap:9px;flex-wrap:wrap}.chip{background:#f2f1ff;color:#5c47b4;border:1px solid #ddd7ff;border-radius:9px;padding:8px 12px;font-size:.84rem;font-weight:700}.downloads{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}.download{display:inline-flex;text-decoration:none;padding:11px 17px;border-radius:10px;background:#101a43;color:white;font-weight:700}.text-reflection{column-count:2;column-gap:36px}.text-reflection p{break-inside:avoid}.infogrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.infofig{border-radius:16px;overflow:hidden;border:1px solid var(--line);cursor:zoom-in}.infofig img{width:100%;height:420px;object-fit:cover;object-position:top}.infofig figcaption{padding:12px 15px;color:var(--muted);font-size:.86rem}.assessment-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.assessment{background:#f8f9fd;border:1px solid var(--line);border-radius:17px;padding:22px}.score{margin:14px 0}.score-row{display:flex;justify-content:space-between;font-size:.87rem;margin-bottom:6px}.score-bar{height:8px;background:#e6e9f2;border-radius:99px;overflow:hidden}.score-bar span{display:block;height:100%;background:linear-gradient(90deg,#8a60ff,#50cfd9)}
+@media(max-width:900px){.artifact-head{grid-template-columns:1fr}.mini-cover{height:260px}.text-reflection{column-count:1}}@media(max-width:680px){.infogrid,.assessment-grid{grid-template-columns:1fr}.infofig img{height:340px}}
+
+/* footer / misc */
+.contact{background:#0a1233;color:white}.contact-box{display:flex;justify-content:space-between;align-items:center;gap:28px;background:linear-gradient(100deg,rgba(130,88,241,.26),rgba(82,210,223,.12));border:1px solid rgba(255,255,255,.15);padding:42px;border-radius:24px}.contact h2{font-family:var(--display);font-size:2.2rem}.contact p{color:#c7cce0}.footer{background:#070d26;color:#aab2cb;padding:28px 0}.foot{display:flex;justify-content:space-between;gap:20px;font-size:.84rem}.lightbox{position:fixed;inset:0;z-index:200;background:rgba(4,7,18,.94);display:none;align-items:flex-start;justify-content:center;padding:45px 18px;overflow:auto}.lightbox.open{display:flex}.lightbox img{max-width:950px;width:96%;border-radius:12px}.close{position:fixed;top:18px;right:20px;background:#fff;color:#111;border:0;border-radius:999px;padding:9px 14px;font-weight:800;cursor:pointer}.reveal{opacity:0;transform:translateY(20px);transition:.65s}.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* final polish */
+.nav-links a.active{color:#b88cff;position:relative}
+.nav-links a.active:after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:2px;background:linear-gradient(90deg,#ef6fa8,#8959ff,#52d2df);border-radius:99px}
+.hero-art{animation:floatScene 8s ease-in-out infinite}
+@keyframes floatScene{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.project-badge{position:absolute;top:16px;left:16px;z-index:3;padding:7px 11px;border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.05em;background:rgba(8,18,47,.75);color:#fff;border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(8px)}
+.metric-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.metric{padding:9px 12px;border-radius:999px;background:#f3f1ff;border:1px solid #ddd7ff;color:#5c47b4;font-size:.82rem;font-weight:800}
+.cap-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.cap-card{padding:18px;border-radius:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12)}
+.cap-card b{display:block;font-family:var(--display);font-size:1rem;margin-bottom:5px}
+.cap-card span{color:#c7cde2;font-size:.88rem}
+.contact-box{position:relative;overflow:hidden}
+.contact-box:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-80px;top:-100px;background:radial-gradient(circle,rgba(82,210,223,.25),transparent 68%)}
+.contact-details{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.contact-chip{display:inline-flex;align-items:center;gap:8px;padding:10px 13px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:#dce2f3;font-size:.88rem}
+.social-row{display:flex;gap:12px;align-items:center}
+.social-link{color:#aab2cb;text-decoration:none}.social-link:hover{color:#fff}
+@media(max-width:700px){.cap-grid{grid-template-columns:1fr}.contact-box{align-items:flex-start;flex-direction:column}}
+
+
+.projects{grid-template-columns:repeat(4,1fr);align-items:stretch}
+.projects .project-card:last-child{grid-column:auto}
+.project-card{display:flex;flex-direction:column}
+.project-visual{flex:0 0 260px;height:260px}
+.project-body{flex:1;display:flex;flex-direction:column}
+.project-body .project-meta{margin-top:auto;padding-top:16px}
+@media(max-width:1180px){.projects{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.projects{grid-template-columns:1fr}}
+.project-card:nth-child(4) .go{background:linear-gradient(135deg,#f0a92c,#e2643c)}
+.model-v{background:radial-gradient(circle at 20% 25%,rgba(82,210,223,.34),transparent 42%),radial-gradient(circle at 82% 78%,rgba(162,78,255,.36),transparent 46%),linear-gradient(150deg,#0d1a3f,#1b1150)}
+.model-cover{width:100%;height:100%;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;padding:22px;color:#fff;text-align:center}
+.model-cover b{display:block;font:800 .74rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.62);margin-bottom:7px}
+.model-cover strong{font-family:var(--display);font-size:1.02rem;line-height:1.28;letter-spacing:-.02em}
+.model-cover .vs{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font:800 .72rem var(--mono);background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28)}
+@media(max-width:680px){.model-cover{grid-template-columns:1fr;gap:6px}.model-cover .vs{margin:0 auto}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-in"><a class="brand" href="#top"><span class="brand-mark">✦</span>YEJIN NAM</a><ul class="nav-links"><li><a href="#top">Home</a></li><li><a href="#about">About Me</a></li><li><a href="#value">Value Proposition</a></li><li><a href="#featured">Artifacts</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li></ul><a class="nav-cta" href="#featured">Explore Portfolio</a><button class="menu" onclick="document.querySelector('.mobile-links').classList.toggle('open')">MENU</button></div><div class="mobile-links"><a href="#about">About Me</a><a href="#value">Value Proposition</a><a href="#featured">Artifacts</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap"><div class="hero-grid"><div><p class="eyebrow">Hi, I’m Yejin</p><h1>Turning data into <span class="grad">actionable impact.</span></h1><p class="hero-copy">I combine operations expertise, analytical thinking, and practical AI to solve real problems, improve processes, and lead change people can trust.<br><strong style="color:#fff">My goal is simple: make technology useful where the work actually happens.</strong></p><div class="actions"><a class="btn primary" href="#featured">Explore My Work →</a><a class="btn secondary" href="#about">About Me ↓</a></div></div><div class="hero-art" aria-label="Interactive portfolio map"><div class="ring r2"></div><div class="ring r1"></div><span class="orb orb1"></span><span class="orb orb2"></span><span class="orb orb3"></span><div class="core"><div><small>My approach</small><strong><span class="o">Observe</span><br><span class="a">Analyze</span><br><span class="i">Improve</span></strong></div></div><a class="float-card fc1" href="#artifact-1"><b>AI Evolution</b><span>History made visual</span></a><a class="float-card fc2" href="#artifact-2"><b>Spotlight Speaker</b><span>AI product storytelling</span></a><a class="float-card fc3" href="#artifact-3"><b>Change Leadership</b><span>Reflection into action</span></a><a class="float-card fc4" href="#artifact-4"><b>Model Choice</b><span>ML vs deep learning</span></a></div></div><div class="stats"><div class="stat-grid"><div class="stat"><label>Role</label><strong>Supply Chain Analyst</strong></div><div class="stat"><label>Focus</label><strong>AI for Operations</strong></div><div class="stat"><label>Program</label><strong>AI &amp; ML — IWU</strong></div><div class="stat"><label>Perspective</label><strong>EN · KO</strong></div></div></div></div></header>
+
+<section class="featured" id="featured"><div class="wrap"><div class="section-head reveal"><div><p class="kicker"><span class="spark">✦</span>Selected work</p><h2>Featured artifacts</h2></div><p>Four projects that show how I research, communicate, design, and lead across AI, operations, and organizational change.</p></div><div class="projects reveal"><a class="project-card" href="#artifact-1"><div class="project-visual timeline-v"><span class="project-badge">Academic Project</span><img src="assets/ai-timeline-cover.png" alt="AI Evolution Timeline presentation cover"></div><div class="project-body"><h3>The Evolution of Artificial Intelligence</h3><p>Interactive timeline project</p><div class="project-meta"><span>PowerPoint Presentation</span><span class="go">→</span></div></div></a><a class="project-card" href="#artifact-2"><div class="project-visual speaker-v"><span class="project-badge">AI Product</span><img src="assets/spotlight-speaker-bot-cover.jpg" alt="Spotlight Speaker AI matchmaking bot"></div><div class="project-body"><h3>Spotlight Speaker</h3><p>AI-powered speaker recommendation bot</p><div class="project-meta"><span>Marketing Infographic</span><span class="go">→</span></div></div></a><a class="project-card" href="#artifact-3"><div class="project-visual lead-v"><span class="project-badge">Leadership</span><img src="assets/leadership-radar-cover.jpg" alt="Leadership competency radar visualization"></div><div class="project-body"><h3>Leadership for AI-Driven Change</h3><p>Reflection and self-assessment</p><div class="project-meta"><span>PDF &amp; Word Documents</span><span class="go">→</span></div></div></a><a class="project-card" href="#artifact-4"><div class="project-visual model-v"><span class="project-badge">Applied Analysis</span><div class="model-cover"><div><b>Machine Learning</b><strong>Customer churn<br>prediction</strong></div><span class="vs">VS</span><div><b>Deep Learning</b><strong>Visual quality<br>inspection</strong></div></div></div><div class="project-body"><h3>Choosing the Right Model</h3><p>When machine learning beats deep learning</p><div class="project-meta"><span>Technical Report</span><span class="go">&rarr;</span></div></div></a></div></div></section>
+
+<section class="value-section" id="value"><div class="wrap value-wrap reveal"><div class="value-main"><p class="kicker">Personal value proposition</p><h2>I turn complex operational data into <span class="highlight">clear, practical decisions.</span></h2><blockquote>As a <strong>supply chain analyst</strong> with hands-on experience in operations and analytics, I translate complex data into actions that improve workflow visibility, performance, and decision quality. I combine frontline operational knowledge with <span class="highlight">AI and machine learning tools</span> to help organizations adopt technology in a way that is practical, responsible, and aligned with real business needs.</blockquote></div><div class="value-side"><div class="value-mini"><label>Audience</label><p>Supply chain, operations, and business leaders seeking practical and people-centered AI solutions.</p></div><div class="value-mini"><label>What I bring</label><div class="pill-row"><span class="value-pill">Operational insight</span><span class="value-pill">Data translation</span><span class="value-pill">AI communication</span><span class="value-pill">Change leadership</span></div></div></div></div></section>
+
+<section id="about"><div class="wrap"><div class="section-head reveal"><div><p class="kicker">Professional profile</p><h2>Operations insight, translated into action.</h2></div></div><div class="about-grid reveal"><div class="about-copy"><p>I work as a supply chain analyst in building-materials distribution, where I turn inventory, demand, and operational data into decisions that teams can actually execute.</p><p>My earlier frontline leadership experience taught me that the best solution is not merely technically correct. It must also be clear, practical, trusted, and connected to how work really happens.</p><p>Graduate study in AI and machine learning has expanded that perspective. I am especially interested in using AI to improve visibility, forecasting, workflow design, and decision quality without losing sight of the people affected by the change.</p></div><aside class="about-card" id="skills"><h3>Core capabilities</h3><div class="cap-grid">
+    <div class="cap-card"><b>Operations &amp; Supply Chain</b><span>Inventory flow, workflow visibility, process improvement, and practical execution.</span></div>
+    <div class="cap-card"><b>Analytics &amp; Reporting</b><span>Excel, Power BI, SAP BusinessObjects, dashboards, and decision support.</span></div>
+    <div class="cap-card"><b>AI Communication</b><span>Prompt engineering, audience-centered explanation, and responsible AI adoption.</span></div>
+    <div class="cap-card"><b>Change Leadership</b><span>Stakeholder trust, planning, feedback loops, and post-implementation improvement.</span></div>
+    </div></aside></div></div></section>
+
+<section class="artifacts"><div class="wrap"><div class="section-head reveal"><div><p class="kicker">Portfolio details</p><h2>Explore the work behind the visuals.</h2></div><p>Each artifact includes its objective, process, tools, value proposition, and downloadable source files.</p></div>
+
+<article class="artifact reveal" id="artifact-1"><div class="artifact-head"><div><p class="kicker">Presentation artifact</p><h3>The Evolution of Artificial Intelligence</h3><p>A visual timeline spanning the foundations of AI, symbolic systems, AI winters, machine learning revival, deep learning, and generative AI.</p><div class="metric-row"><span class="metric">5 Eras</span><span class="metric">15+ Milestones</span><span class="metric">80 Years</span></div></div><div class="mini-cover"><img src="assets/ai-timeline-cover.png" alt="AI Evolution Timeline cover"></div></div><div class="tabs"><button class="tab active" data-panel="a1-over">Overview</button><button class="tab" data-panel="a1-obj">Objective</button><button class="tab" data-panel="a1-process">Process</button><button class="tab" data-panel="a1-tools">Tools</button><button class="tab" data-panel="a1-value">Value</button></div><div class="panels"><div class="panel active" id="a1-over"><h4>What it communicates</h4><p>The presentation organizes roughly eighty years of AI history into five eras and emphasizes a recurring pattern: advances happen when theory, computing power, data, and investment become aligned.</p><div class="downloads"><a class="download" href="assets/Yejin_Nam_AI_Evolution_Timeline.pptx" download>Download PowerPoint ↓</a></div></div><div class="panel" id="a1-obj"><h4>Objective</h4><p>To make AI history understandable to a non-technical audience and show why today’s generative AI boom is connected to decades of earlier research, hardware development, and cycles of changing expectations.</p></div><div class="panel" id="a1-process"><h4>Process</h4><ol><li>Researched major milestones and credible historical sources.</li><li>Grouped milestones into five eras rather than presenting a flat list.</li><li>Created a clear thesis connecting hardware growth with AI capability.</li><li>Designed a consistent visual hierarchy and concise slide narrative.</li><li>Reviewed wording, sequence, and references for clarity.</li></ol></div><div class="panel" id="a1-tools"><h4>Tools used</h4><div class="chips"><span class="chip">Microsoft PowerPoint</span><span class="chip">Research synthesis</span><span class="chip">Generative AI editing support</span><span class="chip">APA references</span></div></div><div class="panel" id="a1-value"><h4>Artifact-specific value proposition</h4><p>This artifact demonstrates my ability to research a complex technical subject, identify the pattern that matters most, and present it visually in a way that supports informed business discussion rather than adding more technical noise.</p></div></div></article>
+
+<article class="artifact reveal" id="artifact-2"><div class="artifact-head"><div><p class="kicker">AI product design artifact</p><h3>Spotlight Speaker</h3><p>A two-piece infographic set for an AI speaker matchmaking bot created by a seven-person team during the AIML-500 residency.</p><div class="metric-row"><span class="metric">7 Speakers</span><span class="metric">Live AI Bot</span><span class="metric">2 Infographics</span></div></div><div class="mini-cover"><img src="assets/spotlight-speaker-bot-cover.jpg" alt="Spotlight Speaker AI matchmaking bot"></div></div><div class="tabs"><button class="tab active" data-panel="a2-view">Visuals</button><button class="tab" data-panel="a2-obj">Objective</button><button class="tab" data-panel="a2-process">Process</button><button class="tab" data-panel="a2-tools">Tools</button><button class="tab" data-panel="a2-value">Value</button></div><div class="panels"><div class="panel active" id="a2-view"><h4>Click either infographic to enlarge</h4><div class="infogrid"><figure class="infofig" onclick="openLightbox('assets/infographic-marketing.png','Spotlight Speaker marketing infographic')"><img src="assets/infographic-marketing.png" alt="Spotlight Speaker marketing infographic"><figcaption>Marketing one-pager: product value, booking flow, speaker roster, and live bot preview.</figcaption></figure><figure class="infofig" onclick="openLightbox('assets/infographic-process.png','Spotlight Speaker process infographic')"><img src="assets/infographic-process.png" alt="Spotlight Speaker process infographic"><figcaption>Making-of infographic: interview, prompting, profile development, bot build, and live demo.</figcaption></figure></div><div class="downloads"><a class="download" href="https://box.boodle.ai/a/@spotlightSpeaker" target="_blank" rel="noopener">Try the live bot ↗</a></div></div><div class="panel" id="a2-obj"><h4>Objective</h4><p>To help universities, corporate teams, and event organizers understand the value of an AI-powered speaker recommendation tool quickly and confidently.</p></div><div class="panel" id="a2-process"><h4>Process</h4><ol><li>Converted team interviews into structured speaker profiles.</li><li>Aligned the profiles with a shared AI knowledge base and booking-agent prompt.</li><li>Developed a clear brand position: faster matching, real voices, and better events.</li><li>Designed two complementary infographics—one for marketing and one for explaining the workflow.</li><li>Tested the live bot with unscripted audience questions.</li></ol></div><div class="panel" id="a2-tools"><h4>Tools used</h4><div class="chips"><span class="chip">BoodleBox</span><span class="chip">Prompt engineering</span><span class="chip">AI image/design tools</span><span class="chip">Content strategy</span></div></div><div class="panel" id="a2-value"><h4>Artifact-specific value proposition</h4><p>This project shows my ability to translate a working AI system into a clear, audience-centered product story. It connects technical system design with communication, visual hierarchy, and user trust.</p></div></div></article>
+
+<article class="artifact reveal" id="artifact-3"><div class="artifact-head"><div><p class="kicker">Leadership reflection artifact</p><h3>Developing Leadership for AI-Driven Organizational Change</h3><p>A written reflection and two completed self-assessments examining my strengths, development opportunities, and readiness to lead change involving AI and machine learning.</p><div class="metric-row"><span class="metric">2 Assessments</span><span class="metric">Reflection</span><span class="metric">Action Plan</span></div></div><div class="mini-cover lead-v"><img src="assets/leadership-radar-cover.jpg" alt="Leadership competency radar visualization"></div></div><div class="tabs"><button class="tab active" data-panel="a3-high">Highlights</button><button class="tab" data-panel="a3-reflect">Reflection</button><button class="tab" data-panel="a3-assess">Assessments</button><button class="tab" data-panel="a3-obj">Objective</button><button class="tab" data-panel="a3-value">Value</button></div><div class="panels"><div class="panel active" id="a3-high"><h4>Leadership profile at a glance</h4><div class="assessment-grid"><div class="assessment"><h4>Strongest capabilities</h4><div class="score"><div class="score-row"><span>Stakeholder communication</span><b>5/5</b></div><div class="score-bar"><span style="width:100%"></span></div></div><div class="score"><div class="score-row"><span>Continuous improvement</span><b>5/5</b></div><div class="score-bar"><span style="width:100%"></span></div></div><div class="score"><div class="score-row"><span>Business alignment</span><b>5/5</b></div><div class="score-bar"><span style="width:100%"></span></div></div></div><div class="assessment"><h4>Development priorities</h4><div class="score"><div class="score-row"><span>AI governance &amp; ethics</span><b>4/5</b></div><div class="score-bar"><span style="width:80%"></span></div></div><div class="score"><div class="score-row"><span>Formal change frameworks</span><b>4/5</b></div><div class="score-bar"><span style="width:80%"></span></div></div><div class="score"><div class="score-row"><span>Post-implementation measurement</span><b>4/5</b></div><div class="score-bar"><span style="width:80%"></span></div></div></div></div></div><div class="panel" id="a3-reflect"><h4>Final reflection</h4><div class="text-reflection"><p>The two self-assessments helped me reflect on leadership from two connected perspectives: leading AI/ML integration and leading people through change. What stood out to me is that both areas require more than technical knowledge. A leader also needs communication skills, trust-building, ethical awareness, and the ability to connect new tools or processes to real business needs.</p><p>In the AI/ML Integration Leadership Skills Self-Assessment, my top three strengths were stakeholder communication, continuous improvement, and aligning technology with business goals. These strengths connect to my operations and supply chain experience because I often work with data, reports, and process improvements that need to be useful for non-technical users.</p><p>In the Change Management Skills Self-Assessment, my top three strengths were problem-solving and critical thinking, planning and organization, and flexibility. These strengths fit my operations background because change in an operational environment often requires quick problem identification, root-cause thinking, and the ability to adjust plans when staffing, volume, or workflow conditions change.</p><p>The assessment also helped me identify opportunities for growth, including deeper knowledge of responsible AI, formal change frameworks, and stronger post-implementation follow-up. In my experience, the success of change depends not only on launching a new process, but also on whether people continue using it correctly and whether leaders continue improving it based on feedback.</p></div></div><div class="panel" id="a3-assess"><h4>Completed assessment files</h4><p>Both documents were completed with scores aligned to the strengths and development areas discussed in the reflection.</p><div class="downloads"><a class="download" href="assets/AI_ML_Integration_Leadership_Assessment_Filled.docx" download>AI/ML Leadership Assessment ↓</a><a class="download" href="assets/Change_Management_Skills_Self_Assessment_Filled.docx" download>Change Management Assessment ↓</a></div></div><div class="panel" id="a3-obj"><h4>Objective</h4><p>To evaluate my current leadership capabilities for AI-enabled organizational change, identify areas for continued development, and connect classroom learning with my real-world experience in operations and supply chain.</p></div><div class="panel" id="a3-value"><h4>Artifact-specific value proposition</h4><p>This artifact demonstrates self-awareness, evidence-based reflection, and a practical understanding that successful technology adoption depends on both system design and human behavior. It shows how I use feedback and structured assessment to turn reflection into a development plan.</p></div></div></article>
+
+<article class="artifact reveal" id="artifact-4">
+  <div class="artifact-head">
+    <div>
+      <p class="kicker">Applied analysis artifact</p>
+      <h3>Choosing the Right Model: When Machine Learning Beats Deep Learning</h3>
+      <p>A decision-focused report that compares a traditional machine learning approach with a deep learning approach using two real business deployments, and explains why swapping the two would raise cost without improving results.</p>
+      <div class="metric-row">
+        <span class="metric">2 Case Studies</span>
+        <span class="metric">SVM vs CNN</span>
+        <span class="metric">Decision Framework</span>
+      </div>
+    </div>
+    <div class="mini-cover model-v">
+      <div class="model-cover">
+        <div><b>Machine Learning</b><strong>Customer churn<br>prediction</strong></div>
+        <span class="vs">VS</span>
+        <div><b>Deep Learning</b><strong>Visual quality<br>inspection</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-panel="a4-compare">Comparison</button>
+    <button class="tab" data-panel="a4-obj">Objective</button>
+    <button class="tab" data-panel="a4-process">Process</button>
+    <button class="tab" data-panel="a4-tools">Tools</button>
+    <button class="tab" data-panel="a4-value">Value</button>
+  </div>
+
+  <div class="panels">
+
+    <div class="panel active" id="a4-compare">
+      <h4>Two problems, two very different right answers</h4>
+      <div class="assessment-grid">
+        <div class="assessment">
+          <h4>Traditional ML — Customer churn prediction</h4>
+          <p><strong>Case:</strong> Dialog Axiata, a telecom operator, built churn prediction on structured subscriber data using a managed cloud ML platform.</p>
+          <p><strong>Why ML fits:</strong> the inputs are already clean, labeled columns — tenure, billing, usage, support contacts. Support vector machines and similar models perform strongly on tabular data, train on modest hardware, and produce results a retention team can question and act on.</p>
+          <p><strong>Why deep learning does not:</strong> neural networks routinely underperform tree- and margin-based models on tabular problems while demanding far more data, tuning, and compute — and the loss of interpretability makes retention offers harder to justify.</p>
+        </div>
+        <div class="assessment">
+          <h4>Deep Learning — Visual quality inspection</h4>
+          <p><strong>Case:</strong> BMW Group deployed convolutional neural networks on the production line to detect part defects and verify component fit from camera images.</p>
+          <p><strong>Why DL fits:</strong> the input is raw pixels with no predefined features. CNNs learn the edges, textures, and shapes that signal a defect directly from labeled images, at line speed and at a consistency manual inspection cannot hold across shifts.</p>
+          <p><strong>Why traditional ML does not:</strong> it would require engineers to hand-craft every visual feature in advance, which breaks down the moment lighting, angle, or part variation changes.</p>
+        </div>
+      </div>
+      <h4>The decision rule I took away</h4>
+      <p>The question is not which technique is more advanced. It is whether the useful features already exist in the data. When they do, traditional machine learning is faster, cheaper, and easier to defend. When they must be discovered from raw signal, deep learning earns its cost.</p>
+      <div class="downloads">
+        <a class="download" href="assets/Yejin_Nam_ML_vs_DL_Report.docx" download>Download full report ↓</a>
+      </div>
+    </div>
+
+    <div class="panel" id="a4-obj">
+      <h4>Objective</h4>
+      <p>To give operations and supply chain leaders a practical way to decide between traditional machine learning and deep learning before committing budget — grounded in two documented deployments rather than in general claims about which technology is newer.</p>
+      <p>The academic version of this work asked me to explain the difference between the two approaches. For this portfolio I reframed it around the question a business audience actually asks: which one should we pay for, and how would we know if we chose wrong?</p>
+    </div>
+
+    <div class="panel" id="a4-process">
+      <h4>Process</h4>
+      <ol>
+        <li>Selected one traditional machine learning problem and one deep learning problem where the data types differ sharply — structured records versus raw images.</li>
+        <li>Researched a documented real-world deployment for each, rather than relying on textbook illustrations.</li>
+        <li>Analyzed why each method suits its problem, using data structure, interpretability needs, and compute cost as the deciding criteria.</li>
+        <li>Argued the reverse case for both — what would go wrong if the approaches were swapped — to test the reasoning instead of only supporting it.</li>
+        <li>Reframed the finished report for a non-technical operations audience and added a plain-language decision rule.</li>
+      </ol>
+    </div>
+
+    <div class="panel" id="a4-tools">
+      <h4>Tools used</h4>
+      <div class="chips">
+        <span class="chip">Supervised learning concepts</span>
+        <span class="chip">Support vector machines</span>
+        <span class="chip">Convolutional neural networks</span>
+        <span class="chip">Case study research</span>
+        <span class="chip">Technical writing</span>
+        <span class="chip">Generative AI editing support</span>
+      </div>
+    </div>
+
+    <div class="panel" id="a4-value">
+      <h4>Artifact-specific value proposition</h4>
+      <p>This artifact demonstrates technical judgment, not just technical vocabulary. It shows that I can match a modeling approach to the structure of the data and the constraints of the business, defend that choice with evidence from real deployments, and explain the trade-off clearly enough that a non-technical decision maker can act on it.</p>
+      <p>For an operations organization, that judgment is what prevents an expensive deep learning project from being launched against a problem a simpler model would have solved in weeks.</p>
+    </div>
+
+  </div>
+</article>
+
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap"><div class="contact-box reveal"><div style="position:relative;z-index:2"><p class="kicker" style="color:#82dce4">Let’s connect</p><h2>Let’s build something meaningful together.</h2><p>My work focuses on making analytics and AI useful, clear, and actionable for operations.</p><div class="contact-details"><span class="contact-chip">✉ yejin.nam@myemail.indwes.edu</span><span class="contact-chip">💼 Supply Chain · AI · Analytics</span><span class="contact-chip">📍 Wisconsin, USA</span></div></div><a class="btn primary" style="position:relative;z-index:2" href="mailto:yejin.nam@myemail.indwes.edu">Email Yejin →</a></div></div></section>
+<footer class="footer"><div class="wrap foot"><span>© 2026 Yejin Nam · AIML-500 Professional Portfolio</span><div class="social-row"><a class="social-link" href="mailto:yejin.nam@myemail.indwes.edu">Email</a><span>·</span><a class="social-link" href="#top">Back to top ↑</a></div></div></footer>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()"><button class="close">Close ✕</button><img id="lightboxImg" alt=""></div>
+<script>
+document.querySelectorAll('.tabs').forEach(group=>{const article=group.closest('.artifact');group.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{group.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));article.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));btn.classList.add('active');article.querySelector('#'+btn.dataset.panel).classList.add('active')}))});
+function openLightbox(src,alt){const lb=document.getElementById('lightbox'),img=document.getElementById('lightboxImg');img.src=src;img.alt=alt;lb.classList.add('open');document.body.style.overflow='hidden'}function closeLightbox(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow=''}document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+
+const sections=[...document.querySelectorAll('header[id],section[id]')];
+const navAnchors=[...document.querySelectorAll('.nav-links a')];
+const sectionObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      navAnchors.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id));
+    }
+  });
+},{rootMargin:'-45% 0px -50% 0px',threshold:0});
+sections.forEach(s=>sectionObserver.observe(s));
+
+</script>
+</body></html>
