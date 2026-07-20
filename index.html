@@ -90,6 +90,15 @@ section{padding:88px 0}.section-head{display:flex;justify-content:space-between;
 .social-link{color:#aab2cb;text-decoration:none}.social-link:hover{color:#fff}
 @media(max-width:700px){.cap-grid{grid-template-columns:1fr}.contact-box{align-items:flex-start;flex-direction:column}}
 
+
+.projects{grid-template-columns:repeat(auto-fit,minmax(258px,1fr))}
+.project-card:nth-child(4) .go{background:linear-gradient(135deg,#f0a92c,#e2643c)}
+.model-v{background:radial-gradient(circle at 20% 25%,rgba(82,210,223,.34),transparent 42%),radial-gradient(circle at 82% 78%,rgba(162,78,255,.36),transparent 46%),linear-gradient(150deg,#0d1a3f,#1b1150)}
+.model-cover{width:100%;height:100%;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;padding:22px;color:#fff;text-align:center}
+.model-cover b{display:block;font:800 .74rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.62);margin-bottom:7px}
+.model-cover strong{font-family:var(--display);font-size:1.02rem;line-height:1.28;letter-spacing:-.02em}
+.model-cover .vs{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font:800 .72rem var(--mono);background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28)}
+@media(max-width:680px){.model-cover{grid-template-columns:1fr;gap:6px}.model-cover .vs{margin:0 auto}}
 </style>
 </head>
 <body>
@@ -97,7 +106,7 @@ section{padding:88px 0}.section-head{display:flex;justify-content:space-between;
 
 <header class="hero" id="top"><div class="wrap"><div class="hero-grid"><div><p class="eyebrow">Hi, I’m Yejin</p><h1>Turning data into <span class="grad">actionable impact.</span></h1><p class="hero-copy">I combine operations expertise, analytical thinking, and practical AI to solve real problems, improve processes, and lead change people can trust.<br><strong style="color:#fff">My goal is simple: make technology useful where the work actually happens.</strong></p><div class="actions"><a class="btn primary" href="#featured">Explore My Work →</a><a class="btn secondary" href="#about">About Me ↓</a></div></div><div class="hero-art" aria-label="Interactive portfolio map"><div class="ring r2"></div><div class="ring r1"></div><span class="orb orb1"></span><span class="orb orb2"></span><span class="orb orb3"></span><div class="core"><div><small>My approach</small><strong><span class="o">Observe</span><br><span class="a">Analyze</span><br><span class="i">Improve</span></strong></div></div><a class="float-card fc1" href="#artifact-1"><b>AI Evolution</b><span>History made visual</span></a><a class="float-card fc2" href="#artifact-2"><b>Spotlight Speaker</b><span>AI product storytelling</span></a><a class="float-card fc3" href="#artifact-3"><b>Change Leadership</b><span>Reflection into action</span></a></div></div><div class="stats"><div class="stat-grid"><div class="stat"><label>Role</label><strong>Supply Chain Analyst</strong></div><div class="stat"><label>Focus</label><strong>AI for Operations</strong></div><div class="stat"><label>Program</label><strong>AI &amp; ML — IWU</strong></div><div class="stat"><label>Perspective</label><strong>EN · KO</strong></div></div></div></div></header>
 
-<section class="featured" id="featured"><div class="wrap"><div class="section-head reveal"><div><p class="kicker"><span class="spark">✦</span>Selected work</p><h2>Featured artifacts</h2></div><p>Three projects that show how I research, communicate, design, and lead across AI, operations, and organizational change.</p></div><div class="projects reveal"><a class="project-card" href="#artifact-1"><div class="project-visual timeline-v"><span class="project-badge">Academic Project</span><img src="assets/ai-timeline-cover.png" alt="AI Evolution Timeline presentation cover"></div><div class="project-body"><h3>The Evolution of Artificial Intelligence</h3><p>Interactive timeline project</p><div class="project-meta"><span>PowerPoint Presentation</span><span class="go">→</span></div></div></a><a class="project-card" href="#artifact-2"><div class="project-visual speaker-v"><span class="project-badge">AI Product</span><img src="assets/spotlight-speaker-bot-cover.jpg" alt="Spotlight Speaker AI matchmaking bot"></div><div class="project-body"><h3>Spotlight Speaker</h3><p>AI-powered speaker recommendation bot</p><div class="project-meta"><span>Marketing Infographic</span><span class="go">→</span></div></div></a><a class="project-card" href="#artifact-3"><div class="project-visual lead-v"><span class="project-badge">Leadership</span><img src="assets/leadership-radar-cover.jpg" alt="Leadership competency radar visualization"></div><div class="project-body"><h3>Leadership for AI-Driven Change</h3><p>Reflection and self-assessment</p><div class="project-meta"><span>PDF &amp; Word Documents</span><span class="go">→</span></div></div></a></div></div></section>
+<section class="featured" id="featured"><div class="wrap"><div class="section-head reveal"><div><p class="kicker"><span class="spark">✦</span>Selected work</p><h2>Featured artifacts</h2></div><p>Four projects that show how I research, communicate, design, and lead across AI, operations, and organizational change.</p></div><div class="projects reveal"><a class="project-card" href="#artifact-1"><div class="project-visual timeline-v"><span class="project-badge">Academic Project</span><img src="assets/ai-timeline-cover.png" alt="AI Evolution Timeline presentation cover"></div><div class="project-body"><h3>The Evolution of Artificial Intelligence</h3><p>Interactive timeline project</p><div class="project-meta"><span>PowerPoint Presentation</span><span class="go">→</span></div></div></a><a class="project-card" href="#artifact-2"><div class="project-visual speaker-v"><span class="project-badge">AI Product</span><img src="assets/spotlight-speaker-bot-cover.jpg" alt="Spotlight Speaker AI matchmaking bot"></div><div class="project-body"><h3>Spotlight Speaker</h3><p>AI-powered speaker recommendation bot</p><div class="project-meta"><span>Marketing Infographic</span><span class="go">→</span></div></div></a><a class="project-card" href="#artifact-3"><div class="project-visual lead-v"><span class="project-badge">Leadership</span><img src="assets/leadership-radar-cover.jpg" alt="Leadership competency radar visualization"></div><div class="project-body"><h3>Leadership for AI-Driven Change</h3><p>Reflection and self-assessment</p><div class="project-meta"><span>PDF &amp; Word Documents</span><span class="go">→</span></div></div></a><a class="project-card" href="#artifact-4"><div class="project-visual model-v"><span class="project-badge">Applied Analysis</span><div class="model-cover"><div><b>Machine Learning</b><strong>Customer churn<br>prediction</strong></div><span class="vs">VS</span><div><b>Deep Learning</b><strong>Visual quality<br>inspection</strong></div></div></div><div class="project-body"><h3>Choosing the Right Model</h3><p>When machine learning beats deep learning</p><div class="project-meta"><span>Technical Report</span><span class="go">&rarr;</span></div></div></a></div></div></section>
 
 <section class="value-section" id="value"><div class="wrap value-wrap reveal"><div class="value-main"><p class="kicker">Personal value proposition</p><h2>I turn complex operational data into <span class="highlight">clear, practical decisions.</span></h2><blockquote>As a <strong>supply chain analyst</strong> with hands-on experience in operations and analytics, I translate complex data into actions that improve workflow visibility, performance, and decision quality. I combine frontline operational knowledge with <span class="highlight">AI and machine learning tools</span> to help organizations adopt technology in a way that is practical, responsible, and aligned with real business needs.</blockquote></div><div class="value-side"><div class="value-mini"><label>Audience</label><p>Supply chain, operations, and business leaders seeking practical and people-centered AI solutions.</p></div><div class="value-mini"><label>What I bring</label><div class="pill-row"><span class="value-pill">Operational insight</span><span class="value-pill">Data translation</span><span class="value-pill">AI communication</span><span class="value-pill">Change leadership</span></div></div></div></div></section>
 
@@ -115,6 +124,99 @@ section{padding:88px 0}.section-head{display:flex;justify-content:space-between;
 <article class="artifact reveal" id="artifact-2"><div class="artifact-head"><div><p class="kicker">AI product design artifact</p><h3>Spotlight Speaker</h3><p>A two-piece infographic set for an AI speaker matchmaking bot created by a seven-person team during the AIML-500 residency.</p><div class="metric-row"><span class="metric">7 Speakers</span><span class="metric">Live AI Bot</span><span class="metric">2 Infographics</span></div></div><div class="mini-cover"><img src="assets/spotlight-speaker-bot-cover.jpg" alt="Spotlight Speaker AI matchmaking bot"></div></div><div class="tabs"><button class="tab active" data-panel="a2-view">Visuals</button><button class="tab" data-panel="a2-obj">Objective</button><button class="tab" data-panel="a2-process">Process</button><button class="tab" data-panel="a2-tools">Tools</button><button class="tab" data-panel="a2-value">Value</button></div><div class="panels"><div class="panel active" id="a2-view"><h4>Click either infographic to enlarge</h4><div class="infogrid"><figure class="infofig" onclick="openLightbox('assets/infographic-marketing.png','Spotlight Speaker marketing infographic')"><img src="assets/infographic-marketing.png" alt="Spotlight Speaker marketing infographic"><figcaption>Marketing one-pager: product value, booking flow, speaker roster, and live bot preview.</figcaption></figure><figure class="infofig" onclick="openLightbox('assets/infographic-process.png','Spotlight Speaker process infographic')"><img src="assets/infographic-process.png" alt="Spotlight Speaker process infographic"><figcaption>Making-of infographic: interview, prompting, profile development, bot build, and live demo.</figcaption></figure></div><div class="downloads"><a class="download" href="https://box.boodle.ai/a/@spotlightSpeaker" target="_blank" rel="noopener">Try the live bot ↗</a></div></div><div class="panel" id="a2-obj"><h4>Objective</h4><p>To help universities, corporate teams, and event organizers understand the value of an AI-powered speaker recommendation tool quickly and confidently.</p></div><div class="panel" id="a2-process"><h4>Process</h4><ol><li>Converted team interviews into structured speaker profiles.</li><li>Aligned the profiles with a shared AI knowledge base and booking-agent prompt.</li><li>Developed a clear brand position: faster matching, real voices, and better events.</li><li>Designed two complementary infographics—one for marketing and one for explaining the workflow.</li><li>Tested the live bot with unscripted audience questions.</li></ol></div><div class="panel" id="a2-tools"><h4>Tools used</h4><div class="chips"><span class="chip">BoodleBox</span><span class="chip">Prompt engineering</span><span class="chip">AI image/design tools</span><span class="chip">Content strategy</span></div></div><div class="panel" id="a2-value"><h4>Artifact-specific value proposition</h4><p>This project shows my ability to translate a working AI system into a clear, audience-centered product story. It connects technical system design with communication, visual hierarchy, and user trust.</p></div></div></article>
 
 <article class="artifact reveal" id="artifact-3"><div class="artifact-head"><div><p class="kicker">Leadership reflection artifact</p><h3>Developing Leadership for AI-Driven Organizational Change</h3><p>A written reflection and two completed self-assessments examining my strengths, development opportunities, and readiness to lead change involving AI and machine learning.</p><div class="metric-row"><span class="metric">2 Assessments</span><span class="metric">Reflection</span><span class="metric">Action Plan</span></div></div><div class="mini-cover lead-v"><img src="assets/leadership-radar-cover.jpg" alt="Leadership competency radar visualization"></div></div><div class="tabs"><button class="tab active" data-panel="a3-high">Highlights</button><button class="tab" data-panel="a3-reflect">Reflection</button><button class="tab" data-panel="a3-assess">Assessments</button><button class="tab" data-panel="a3-obj">Objective</button><button class="tab" data-panel="a3-value">Value</button></div><div class="panels"><div class="panel active" id="a3-high"><h4>Leadership profile at a glance</h4><div class="assessment-grid"><div class="assessment"><h4>Strongest capabilities</h4><div class="score"><div class="score-row"><span>Stakeholder communication</span><b>5/5</b></div><div class="score-bar"><span style="width:100%"></span></div></div><div class="score"><div class="score-row"><span>Continuous improvement</span><b>5/5</b></div><div class="score-bar"><span style="width:100%"></span></div></div><div class="score"><div class="score-row"><span>Business alignment</span><b>5/5</b></div><div class="score-bar"><span style="width:100%"></span></div></div></div><div class="assessment"><h4>Development priorities</h4><div class="score"><div class="score-row"><span>AI governance &amp; ethics</span><b>4/5</b></div><div class="score-bar"><span style="width:80%"></span></div></div><div class="score"><div class="score-row"><span>Formal change frameworks</span><b>4/5</b></div><div class="score-bar"><span style="width:80%"></span></div></div><div class="score"><div class="score-row"><span>Post-implementation measurement</span><b>4/5</b></div><div class="score-bar"><span style="width:80%"></span></div></div></div></div></div><div class="panel" id="a3-reflect"><h4>Final reflection</h4><div class="text-reflection"><p>The two self-assessments helped me reflect on leadership from two connected perspectives: leading AI/ML integration and leading people through change. What stood out to me is that both areas require more than technical knowledge. A leader also needs communication skills, trust-building, ethical awareness, and the ability to connect new tools or processes to real business needs.</p><p>In the AI/ML Integration Leadership Skills Self-Assessment, my top three strengths were stakeholder communication, continuous improvement, and aligning technology with business goals. These strengths connect to my operations and supply chain experience because I often work with data, reports, and process improvements that need to be useful for non-technical users.</p><p>In the Change Management Skills Self-Assessment, my top three strengths were problem-solving and critical thinking, planning and organization, and flexibility. These strengths fit my operations background because change in an operational environment often requires quick problem identification, root-cause thinking, and the ability to adjust plans when staffing, volume, or workflow conditions change.</p><p>The assessment also helped me identify opportunities for growth, including deeper knowledge of responsible AI, formal change frameworks, and stronger post-implementation follow-up. In my experience, the success of change depends not only on launching a new process, but also on whether people continue using it correctly and whether leaders continue improving it based on feedback.</p></div></div><div class="panel" id="a3-assess"><h4>Completed assessment files</h4><p>Both documents were completed with scores aligned to the strengths and development areas discussed in the reflection.</p><div class="downloads"><a class="download" href="assets/AI_ML_Integration_Leadership_Assessment_Filled.docx" download>AI/ML Leadership Assessment ↓</a><a class="download" href="assets/Change_Management_Skills_Self_Assessment_Filled.docx" download>Change Management Assessment ↓</a></div></div><div class="panel" id="a3-obj"><h4>Objective</h4><p>To evaluate my current leadership capabilities for AI-enabled organizational change, identify areas for continued development, and connect classroom learning with my real-world experience in operations and supply chain.</p></div><div class="panel" id="a3-value"><h4>Artifact-specific value proposition</h4><p>This artifact demonstrates self-awareness, evidence-based reflection, and a practical understanding that successful technology adoption depends on both system design and human behavior. It shows how I use feedback and structured assessment to turn reflection into a development plan.</p></div></div></article>
+
+<article class="artifact reveal" id="artifact-4">
+  <div class="artifact-head">
+    <div>
+      <p class="kicker">Applied analysis artifact</p>
+      <h3>Choosing the Right Model: When Machine Learning Beats Deep Learning</h3>
+      <p>A decision-focused report that compares a traditional machine learning approach with a deep learning approach using two real business deployments, and explains why swapping the two would raise cost without improving results.</p>
+      <div class="metric-row">
+        <span class="metric">2 Case Studies</span>
+        <span class="metric">SVM vs CNN</span>
+        <span class="metric">Decision Framework</span>
+      </div>
+    </div>
+    <div class="mini-cover model-v">
+      <div class="model-cover">
+        <div><b>Machine Learning</b><strong>Customer churn<br>prediction</strong></div>
+        <span class="vs">VS</span>
+        <div><b>Deep Learning</b><strong>Visual quality<br>inspection</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-panel="a4-compare">Comparison</button>
+    <button class="tab" data-panel="a4-obj">Objective</button>
+    <button class="tab" data-panel="a4-process">Process</button>
+    <button class="tab" data-panel="a4-tools">Tools</button>
+    <button class="tab" data-panel="a4-value">Value</button>
+  </div>
+
+  <div class="panels">
+
+    <div class="panel active" id="a4-compare">
+      <h4>Two problems, two very different right answers</h4>
+      <div class="assessment-grid">
+        <div class="assessment">
+          <h4>Traditional ML — Customer churn prediction</h4>
+          <p><strong>Case:</strong> Dialog Axiata, a telecom operator, built churn prediction on structured subscriber data using a managed cloud ML platform.</p>
+          <p><strong>Why ML fits:</strong> the inputs are already clean, labeled columns — tenure, billing, usage, support contacts. Support vector machines and similar models perform strongly on tabular data, train on modest hardware, and produce results a retention team can question and act on.</p>
+          <p><strong>Why deep learning does not:</strong> neural networks routinely underperform tree- and margin-based models on tabular problems while demanding far more data, tuning, and compute — and the loss of interpretability makes retention offers harder to justify.</p>
+        </div>
+        <div class="assessment">
+          <h4>Deep Learning — Visual quality inspection</h4>
+          <p><strong>Case:</strong> BMW Group deployed convolutional neural networks on the production line to detect part defects and verify component fit from camera images.</p>
+          <p><strong>Why DL fits:</strong> the input is raw pixels with no predefined features. CNNs learn the edges, textures, and shapes that signal a defect directly from labeled images, at line speed and at a consistency manual inspection cannot hold across shifts.</p>
+          <p><strong>Why traditional ML does not:</strong> it would require engineers to hand-craft every visual feature in advance, which breaks down the moment lighting, angle, or part variation changes.</p>
+        </div>
+      </div>
+      <h4>The decision rule I took away</h4>
+      <p>The question is not which technique is more advanced. It is whether the useful features already exist in the data. When they do, traditional machine learning is faster, cheaper, and easier to defend. When they must be discovered from raw signal, deep learning earns its cost.</p>
+      <div class="downloads">
+        <a class="download" href="assets/Yejin_Nam_ML_vs_DL_Report.docx" download>Download full report ↓</a>
+      </div>
+    </div>
+
+    <div class="panel" id="a4-obj">
+      <h4>Objective</h4>
+      <p>To give operations and supply chain leaders a practical way to decide between traditional machine learning and deep learning before committing budget — grounded in two documented deployments rather than in general claims about which technology is newer.</p>
+      <p>The academic version of this work asked me to explain the difference between the two approaches. For this portfolio I reframed it around the question a business audience actually asks: which one should we pay for, and how would we know if we chose wrong?</p>
+    </div>
+
+    <div class="panel" id="a4-process">
+      <h4>Process</h4>
+      <ol>
+        <li>Selected one traditional machine learning problem and one deep learning problem where the data types differ sharply — structured records versus raw images.</li>
+        <li>Researched a documented real-world deployment for each, rather than relying on textbook illustrations.</li>
+        <li>Analyzed why each method suits its problem, using data structure, interpretability needs, and compute cost as the deciding criteria.</li>
+        <li>Argued the reverse case for both — what would go wrong if the approaches were swapped — to test the reasoning instead of only supporting it.</li>
+        <li>Reframed the finished report for a non-technical operations audience and added a plain-language decision rule.</li>
+      </ol>
+    </div>
+
+    <div class="panel" id="a4-tools">
+      <h4>Tools used</h4>
+      <div class="chips">
+        <span class="chip">Supervised learning concepts</span>
+        <span class="chip">Support vector machines</span>
+        <span class="chip">Convolutional neural networks</span>
+        <span class="chip">Case study research</span>
+        <span class="chip">Technical writing</span>
+        <span class="chip">Generative AI editing support</span>
+      </div>
+    </div>
+
+    <div class="panel" id="a4-value">
+      <h4>Artifact-specific value proposition</h4>
+      <p>This artifact demonstrates technical judgment, not just technical vocabulary. It shows that I can match a modeling approach to the structure of the data and the constraints of the business, defend that choice with evidence from real deployments, and explain the trade-off clearly enough that a non-technical decision maker can act on it.</p>
+      <p>For an operations organization, that judgment is what prevents an expensive deep learning project from being launched against a problem a simpler model would have solved in weeks.</p>
+    </div>
+
+  </div>
+</article>
+
 </div></section>
 
 <section class="contact" id="contact"><div class="wrap"><div class="contact-box reveal"><div style="position:relative;z-index:2"><p class="kicker" style="color:#82dce4">Let’s connect</p><h2>Let’s build something meaningful together.</h2><p>My work focuses on making analytics and AI useful, clear, and actionable for operations.</p><div class="contact-details"><span class="contact-chip">✉ yejin.nam@myemail.indwes.edu</span><span class="contact-chip">💼 Supply Chain · AI · Analytics</span><span class="contact-chip">📍 Wisconsin, USA</span></div></div><a class="btn primary" style="position:relative;z-index:2" href="mailto:yejin.nam@myemail.indwes.edu">Email Yejin →</a></div></div></section>
