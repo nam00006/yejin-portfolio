@@ -106,6 +106,10 @@ section{padding:88px 0}.section-head{display:flex;justify-content:space-between;
 .model-cover strong{font-family:var(--display);font-size:1.02rem;line-height:1.28;letter-spacing:-.02em}
 .model-cover .vs{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font:800 .72rem var(--mono);background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28)}
 @media(max-width:680px){.model-cover{grid-template-columns:1fr;gap:6px}.model-cover .vs{margin:0 auto}}
+.flow-v{background:radial-gradient(circle at 24% 28%,rgba(82,210,223,.34),transparent 44%),radial-gradient(circle at 80% 76%,rgba(162,78,255,.32),transparent 46%),linear-gradient(150deg,#0c1741,#171052)}
+.flow-cover{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:22px;color:#fff;text-align:center}
+.flow-node{font:800 .72rem var(--mono);letter-spacing:.1em;text-transform:uppercase;line-height:1.2;padding:11px 18px;border-radius:12px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.24);min-width:130px}
+.flow-arrow{color:rgba(255,255,255,.55);font-size:1.05rem;line-height:1}
 </style>
 </head>
 <body>
@@ -113,7 +117,7 @@ section{padding:88px 0}.section-head{display:flex;justify-content:space-between;
 
 <header class="hero" id="top"><div class="wrap"><div class="hero-grid"><div><p class="eyebrow">Hi, I’m Yejin</p><h1>Turning data into <span class="grad">actionable impact.</span></h1><p class="hero-copy">I combine operations expertise, analytical thinking, and practical AI to solve real problems, improve processes, and lead change people can trust.<br><strong style="color:#fff">My goal is simple: make technology useful where the work actually happens.</strong></p><div class="actions"><a class="btn primary" href="#featured">Explore My Work →</a><a class="btn secondary" href="#about">About Me ↓</a></div></div><div class="hero-art" aria-label="Interactive portfolio map"><div class="ring r2"></div><div class="ring r1"></div><span class="orb orb1"></span><span class="orb orb2"></span><span class="orb orb3"></span><div class="core"><div><small>My approach</small><strong><span class="o">Observe</span><br><span class="a">Analyze</span><br><span class="i">Improve</span></strong></div></div><a class="float-card fc1" href="#artifact-1"><b>AI Evolution</b><span>History made visual</span></a><a class="float-card fc2" href="#artifact-2"><b>Spotlight Speaker</b><span>AI product storytelling</span></a><a class="float-card fc3" href="#artifact-3"><b>Change Leadership</b><span>Reflection into action</span></a><a class="float-card fc4" href="#artifact-4"><b>Model Choice</b><span>ML vs deep learning</span></a></div></div><div class="stats"><div class="stat-grid"><div class="stat"><label>Role</label><strong>Supply Chain Analyst</strong></div><div class="stat"><label>Focus</label><strong>AI for Operations</strong></div><div class="stat"><label>Program</label><strong>AI &amp; ML — IWU</strong></div><div class="stat"><label>Perspective</label><strong>EN · KO</strong></div></div></div></div></header>
 
-<section class="featured" id="featured"><div class="wrap"><div class="section-head reveal"><div><p class="kicker"><span class="spark">✦</span>Selected work</p><h2>Featured artifacts</h2></div><p>Four projects that show how I research, communicate, design, and lead across AI, operations, and organizational change.</p></div><div class="projects reveal"><a class="project-card" href="#artifact-1"><div class="project-visual timeline-v"><span class="project-badge">Academic Project</span><img src="assets/ai-timeline-cover.png" alt="AI Evolution Timeline presentation cover"></div><div class="project-body"><h3>The Evolution of Artificial Intelligence</h3><p>Interactive timeline project</p><div class="project-meta"><span>PowerPoint Presentation</span><span class="go">→</span></div></div></a><a class="project-card" href="#artifact-2"><div class="project-visual speaker-v"><span class="project-badge">AI Product</span><img src="assets/spotlight-speaker-bot-cover.jpg" alt="Spotlight Speaker AI matchmaking bot"></div><div class="project-body"><h3>Spotlight Speaker</h3><p>AI-powered speaker recommendation bot</p><div class="project-meta"><span>Marketing Infographic</span><span class="go">→</span></div></div></a><a class="project-card" href="#artifact-3"><div class="project-visual lead-v"><span class="project-badge">Leadership</span><img src="assets/leadership-radar-cover.jpg" alt="Leadership competency radar visualization"></div><div class="project-body"><h3>Leadership for AI-Driven Change</h3><p>Reflection and self-assessment</p><div class="project-meta"><span>PDF &amp; Word Documents</span><span class="go">→</span></div></div></a><a class="project-card" href="#artifact-4"><div class="project-visual model-v"><span class="project-badge">Applied Analysis</span><div class="model-cover"><div><b>Machine Learning</b><strong>Customer churn<br>prediction</strong></div><span class="vs">VS</span><div><b>Deep Learning</b><strong>Visual quality<br>inspection</strong></div></div></div><div class="project-body"><h3>Choosing the Right Model</h3><p>When machine learning beats deep learning</p><div class="project-meta"><span>Technical Report</span><span class="go">&rarr;</span></div></div></a></div></div></section>
+<section class="featured" id="featured"><div class="wrap"><div class="section-head reveal"><div><p class="kicker"><span class="spark">✦</span>Selected work</p><h2>Featured artifacts</h2></div><p>Five projects that show how I research, communicate, design, and lead across AI, operations, and organizational change.</p></div><div class="projects reveal"><a class="project-card" href="#artifact-1"><div class="project-visual timeline-v"><span class="project-badge">Academic Project</span><img src="assets/ai-timeline-cover.png" alt="AI Evolution Timeline presentation cover"></div><div class="project-body"><h3>The Evolution of Artificial Intelligence</h3><p>Interactive timeline project</p><div class="project-meta"><span>PowerPoint Presentation</span><span class="go">→</span></div></div></a><a class="project-card" href="#artifact-2"><div class="project-visual speaker-v"><span class="project-badge">AI Product</span><img src="assets/spotlight-speaker-bot-cover.jpg" alt="Spotlight Speaker AI matchmaking bot"></div><div class="project-body"><h3>Spotlight Speaker</h3><p>AI-powered speaker recommendation bot</p><div class="project-meta"><span>Marketing Infographic</span><span class="go">→</span></div></div></a><a class="project-card" href="#artifact-3"><div class="project-visual lead-v"><span class="project-badge">Leadership</span><img src="assets/leadership-radar-cover.jpg" alt="Leadership competency radar visualization"></div><div class="project-body"><h3>Leadership for AI-Driven Change</h3><p>Reflection and self-assessment</p><div class="project-meta"><span>PDF &amp; Word Documents</span><span class="go">→</span></div></div></a><a class="project-card" href="#artifact-4"><div class="project-visual model-v"><span class="project-badge">Applied Analysis</span><div class="model-cover"><div><b>Machine Learning</b><strong>Customer churn<br>prediction</strong></div><span class="vs">VS</span><div><b>Deep Learning</b><strong>Visual quality<br>inspection</strong></div></div></div><div class="project-body"><h3>Choosing the Right Model</h3><p>When machine learning beats deep learning</p><div class="project-meta"><span>Technical Report</span><span class="go">&rarr;</span></div></div></a><a class="project-card" href="#artifact-5"><div class="project-visual flow-v"><span class="project-badge">AI Communication</span><div class="flow-cover"><span class="flow-node">Inputs</span><span class="flow-arrow">&darr;</span><span class="flow-node">Hidden Layers</span><span class="flow-arrow">&darr;</span><span class="flow-node">Output</span></div></div><div class="project-body"><h3>Neural Networks, Explained</h3><p>A technical concept in plain language</p><div class="project-meta"><span>Explainer / Discussion Post</span><span class="go">&rarr;</span></div></div></a></div></div></section>
 
 <section class="value-section" id="value"><div class="wrap value-wrap reveal"><div class="value-main"><p class="kicker">Personal value proposition</p><h2>I turn complex operational data into <span class="highlight">clear, practical decisions.</span></h2><blockquote>As a <strong>supply chain analyst</strong> with hands-on experience in operations and analytics, I translate complex data into actions that improve workflow visibility, performance, and decision quality. I combine frontline operational knowledge with <span class="highlight">AI and machine learning tools</span> to help organizations adopt technology in a way that is practical, responsible, and aligned with real business needs.</blockquote></div><div class="value-side"><div class="value-mini"><label>Audience</label><p>Supply chain, operations, and business leaders seeking practical and people-centered AI solutions.</p></div><div class="value-mini"><label>What I bring</label><div class="pill-row"><span class="value-pill">Operational insight</span><span class="value-pill">Data translation</span><span class="value-pill">AI communication</span><span class="value-pill">Change leadership</span></div></div></div></div></section>
 
@@ -219,6 +223,96 @@ section{padding:88px 0}.section-head{display:flex;justify-content:space-between;
       <h4>Artifact-specific value proposition</h4>
       <p>This artifact demonstrates technical judgment, not just technical vocabulary. It shows that I can match a modeling approach to the structure of the data and the constraints of the business, defend that choice with evidence from real deployments, and explain the trade-off clearly enough that a non-technical decision maker can act on it.</p>
       <p>For an operations organization, that judgment is what prevents an expensive deep learning project from being launched against a problem a simpler model would have solved in weeks.</p>
+    </div>
+
+  </div>
+</article>
+
+<article class="artifact reveal" id="artifact-5">
+  <div class="artifact-head">
+    <div>
+      <p class="kicker">AI communication artifact</p>
+      <h3>Neural Networks, Explained Like a Sorting Line</h3>
+      <p>A plain-language explanation of how a neural network works, written for a non-technical operations audience using a distribution-center sorting-line analogy instead of mathematics.</p>
+      <div class="metric-row">
+        <span class="metric">Non-technical Audience</span>
+        <span class="metric">Analogy-Driven</span>
+        <span class="metric">Responsible Framing</span>
+      </div>
+    </div>
+    <div class="mini-cover flow-v">
+      <div class="flow-cover">
+        <span class="flow-node">Inputs</span>
+        <span class="flow-arrow">&darr;</span>
+        <span class="flow-node">Hidden Layers</span>
+        <span class="flow-arrow">&darr;</span>
+        <span class="flow-node">Output</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-panel="a5-explain">Explanation</button>
+    <button class="tab" data-panel="a5-obj">Objective</button>
+    <button class="tab" data-panel="a5-process">Process</button>
+    <button class="tab" data-panel="a5-tools">Tools</button>
+    <button class="tab" data-panel="a5-value">Value</button>
+  </div>
+
+  <div class="panels">
+
+    <div class="panel active" id="a5-explain">
+      <h4>A neural network as a package sorting line</h4>
+      <p>Imagine a package arriving at a distribution center. It travels down a line of stations, and each station asks one small question — how heavy is it, what does the label say, is it fragile. By the end of the line, all those small answers add up to one decision: which truck it goes on. A neural network works the same way.</p>
+      <div class="assessment-grid">
+        <div class="assessment">
+          <h4>The parts of the network</h4>
+          <p><strong>Inputs</strong> are the clues — weight, size, label. For a demand forecast, they might be recent orders, seasonal trends, and inventory levels.</p>
+          <p><strong>Hidden layers</strong> are the stations in the middle of the line. Each one looks for a more complex pattern than the one before it.</p>
+          <p><strong>Weights</strong> decide how much importance the network gives each clue — a damaged-box label may matter more than the color of the tape.</p>
+          <p><strong>Output</strong> is the final decision: "Send this package to Truck 4," or "Plan to ship 1,200 units next month."</p>
+        </div>
+        <div class="assessment">
+          <h4>How it learns — and where it stops</h4>
+          <p><strong>Learning</strong> works like a new employee. The network makes a prediction, gets feedback on whether it was right, and adjusts how much importance it gives each clue. Repeated across many examples at enormous speed, it gradually becomes more accurate.</p>
+          <p><strong>The limitation:</strong> a network only learns from the examples it has been given. A model trained on last season's shipping patterns can confidently produce an outdated answer when demand, inventory, or transportation capacity changes — which is why human judgment at the end of the line still matters.</p>
+        </div>
+      </div>
+      <p style="color:var(--muted);font-size:.86rem;margin-top:6px"><em>Originally written for AIML-500 Discussion 3.4, "Communicating for Learning" (459 words), then reframed for a professional audience.</em></p>
+    </div>
+
+    <div class="panel" id="a5-obj">
+      <h4>Objective</h4>
+      <p>To explain a technical AI concept — how a neural network works — clearly enough for a non-technical operations audience to follow, without relying on mathematics or jargon.</p>
+      <p>The academic version of this work asked me to explain neural networks with the help of a generative AI model. For this portfolio I kept the workplace framing so the explanation reads as something I could hand directly to a warehouse or supply chain team, not only as a classroom answer.</p>
+    </div>
+
+    <div class="panel" id="a5-process">
+      <h4>Process</h4>
+      <ol>
+        <li>Used <strong>chunking</strong> — divided the concept into short, single-idea sections: inputs, hidden layers, weights, output, and training.</li>
+        <li>Used <strong>storytelling and analogy</strong> — anchored the entire explanation in a distribution-center sorting line the audience already understands.</li>
+        <li>Used <strong>progressive disclosure</strong> — explained inputs before layers, weights, and training, so each idea builds on the previous one.</li>
+        <li>Used <strong>relevance and context</strong> — connected every part to a familiar workplace instead of starting from abstract mathematics.</li>
+        <li>Included a <strong>limitation</strong> on purpose, to encourage critical thinking and two-way discussion rather than presenting neural networks as automatically reliable.</li>
+      </ol>
+    </div>
+
+    <div class="panel" id="a5-tools">
+      <h4>Tools used</h4>
+      <div class="chips">
+        <span class="chip">Prompt engineering</span>
+        <span class="chip">Analogy &amp; audience framing</span>
+        <span class="chip">Supply chain domain knowledge</span>
+        <span class="chip">Technical communication</span>
+        <span class="chip">Generative AI editing support</span>
+      </div>
+    </div>
+
+    <div class="panel" id="a5-value">
+      <h4>Artifact-specific value proposition</h4>
+      <p>This artifact demonstrates my ability to translate a technical AI concept into plain language a non-technical audience can act on — a core skill for helping operations teams and leaders adopt AI with real understanding rather than blind trust.</p>
+      <p>It also shows responsible framing. By naming a concrete limitation, I present AI as a tool that supports human judgment instead of replacing it — the same principle I bring to introducing new tools on the operations floor.</p>
     </div>
 
   </div>
